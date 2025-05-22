@@ -18,9 +18,23 @@ p, label{
     color: #444;
 }
 
-input{
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="email"],
+textarea{
+    margin-top: 15px;
     border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 0;
+    width: 400px;
 }
+
+.radio{
+    display: block;
+}
+
 
 .header{
     padding: 20px;
@@ -42,3 +56,58 @@ input{
     top: -62px;
 }
 
+.form-header{
+    border-bottom: 1px solid #dfdfdf;
+    height: 45px;
+}
+
+.form-header p{
+    color:#a886ff;
+    border-bottom: 2px solid #a886ff;
+    width: 110px;
+    text-align: center;
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px;
+    margin: 0 auto;
+}
+
+.form-body{
+    padding: 30px;
+}
+
+.form-body p{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.required-field{
+    color: #d10000;
+}
+
+.box-input{
+    margin-bottom: 35px;
+}
+
+.block{
+    display: block;
+}
+
+.button-sub{
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+    background-color: #a886ff;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5;
+}
+
+.button-sub:hover{
+    background-color: #fff;
+    color: #a886ff;
+    border-color:#a886ff;
+}

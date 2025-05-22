@@ -10,19 +10,75 @@
     <div class="container">
         <div class="header">
             <div class="title">
-                <h3>Pesquisa de interesse dos funcionários.</h2>
+                <h3>Pesquisa de interesse e satisfação dos funcionários.</h2>
             </div>
         </div>
          <div class="form-container">
             <div class="form-header">
              <p>Formulário</p>
              </div>
+             <div class="form-body">
              <div class="form-title">
                     <h1>Pesquisa da empresa</h1>
                     <p>Essa pesquisa tem o intuito de conhecer melhor nossos funcionários e seus
                     interesses. Fique a vontade e responda com honestidade. ^^
-                </p>
+                    </p>
              </div>
+             <form>
+             <div class="box-input">
+                <label for="name">Nome <span class="required-field">*</span></label>
+                <input type="text" name="name" id="name" minlength="1" maxlength="50" class="block" required>
+             </div>
+             <div class="box-input">
+                <label for="gender">Você é...<span class="required-field">*</span></label>
+                    <input type="radio" id="men" name="gender" required>
+                    <label for="men">Homem</label>
+                    <input type="radio" id="women" name="gender" required>
+                    <label for="women">Mulher</label>
+            </div>
+             <div class="box-input">
+                <label for="birthday">Aniversário <span class="required-field">*</span></label>
+                <input type="date" name="birthday" id="birthday" class="block" required>
+             </div>
+             <div class="box-input">
+                <label for="phone">Telefone <span class="required-field">*</span></label>
+                <input type="text" name="phone" id="phone" minlength="1" maxlength="20" class="block" required>
+             </div>
+             <div class="box-input">
+                <label for="email">E-mail <span class="required-field">*</span></label>
+                <input type="email" name="email" id="email" minlength="1" maxlength="50" class="block" required>
+             </div>
+             <div class="box-input">
+                <label for="comment">Você tem algum comentário sobre serviços e infrastrutura da empresa?</label>
+                <textarea name="comment" id="comment" minlength="1" class="block" required></textarea>
+            </div>
+            <div class="box-input">
+                <label for="drink">Qual bebida você gostaria que a empresa disponibilizasse a vontade?</label>
+                <div class="radio">
+                    <input type="checkbox" value="cofee" name="drink[]">
+                    <label for="cofee">Café</label>
+                </div>
+                <div class="radio">
+                    <input type="checkbox" value="tea" name="drink[]">
+                    <label for="tea">Chá</label>
+                </div>
+                <div class="radio">
+                    <input type="checkbox" value="chocolate" name="drink[]">
+                    <label for="chocolate">Achocolatado</label>
+                </div>
+                <div class="radio">
+                    <input type="checkbox" value="sparklingwater" name="drink[]">
+                    <label for="sparklingwater">Água com gás</label>
+                </div>
+                <div class="radio">
+                    <input type="checkbox" value="energetic" name="drink[]">
+                    <label for="energetic">Energético</label>
+                </div>
+            </div>
+            </div>
+             <input class="button-sub" type="submit" value="Enviar">
+             </form>
+            </div>
         </div>
     </div>
 </body>
